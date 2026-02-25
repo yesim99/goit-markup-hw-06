@@ -714,3 +714,124 @@ address {
   line-height: 1.16;
   letter-spacing: 2%;
 }
+/*modül6başlangıç*/
+.menu-sosyal-icon {
+display: none;
+}
+.hamburger {
+  display: none;
+}
+/*mobil görünüm*/
+@media (min-width:320px) and (max-width:767px)
+{
+.modal.is-open{
+width: 100%;
+}
+  .hamburger >.icon-heroicons-solid_menu {
+  display: flex;
+    top: 16px;
+    left: 280px;
+    width: 24px;
+    height: 24px;
+  }
+  .page-nav .link {
+    margin-top: 24px;
+    margin-left: 16px;
+    gap: 40px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+   }
+   nav >address {
+        width: 193px;
+        height: 24px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        margin-bottom: 168px;
+        gap: 24px;
+        margin-bottom: 48px;
+    
+   }
+   .menu-sosyal-icon {
+    display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 40px;
+      margin-left: 16px;
+     position: absolute;
+     width: 280px;
+     height: 40px;
+   }
+header {
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 320px;
+  height: 56px;
+}
+nav,
+address {
+display: none;
+}
+h1 {
+  font-size: 36px;
+  line-height: 1.11;
+}
+.page-list {
+gap: 72px;
+flex-direction: column;
+}
+.page-list img {
+width: 100%;
+object-fit: cover;
+}
+.container {
+  max-width: 320px;
+}
+.icon1{
+  display: none;
+}
+.page-section1 {
+  flex-direction: column;
+gap: 72px;
+}
+.page-list {
+  flex-direction: column;
+  gap: 72px;
+
+}
+.page-list-portfolio {
+  flex-direction: column;
+  gap: 48px;
+}
+.bölüm3 {
+  width: 288px;
+  height: 400px;
+}
+.footer {
+  padding: 96px 0;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
+  text-align: center;
+}
+.sonicon {
+  justify-content: center;
+}
+.form .emailfooter {
+  gap: 16px;
+  flex-direction: column;
+  text-align: center;
+
+}
+.form1 >label >input {
+max-width: 288px;
+width: 100%;
+}
+.abone.button-svg1 {
+  width: 165px;
+}
+}
