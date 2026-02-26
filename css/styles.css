@@ -28,6 +28,11 @@ body {
   letter-spacing: 2%;
   color: #434455;
 }
+img {
+  display: block;
+    max-width: 100%;
+    height: auto;
+}
 header {
   display: flex;
     border-bottom: 1px solid #e7e9fc;
@@ -473,14 +478,15 @@ align-items: flex-start;
 }
 
 .footer {
-  width: 320px;  
   height: 664px;
-  display: flex;
-  flex-direction: column;
-  background-color: #2e2f42;
-  gap: 72px;
-  padding-bottom: 96px;
-  padding-top: 96px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 320px;
+    gap: 120px;
+    background-color: #2e2f42;
+    justify-content: center;
+    align-items: center;
 }
 .logoson {
   width: 116px;
@@ -508,7 +514,9 @@ align-items: flex-start;
   gap: 16px;
   width: 280px;
   height: 80px;
-  margin: 0 56px;
+  align-content: center;
+
+
 }
 .sonicon {
   display: flex;
@@ -541,7 +549,7 @@ align-items: flex-start;
     justify-content: center;
     padding: 8px 24px;
     margin-top: 16px;
-    margin-left: 77px;
+    margin-left: 70px;
     gap: 16px;
     color: #f4f4fd;
     background-color:#4D5AE5;
