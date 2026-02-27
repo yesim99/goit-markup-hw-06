@@ -782,3 +782,129 @@ align-items: flex-start;
   line-height: 1.16;
   letter-spacing: 2%;
 }
+
+
+/*TABLET GÖRÜNÜMÜ*/
+@media (min-width:320px) and (max-width:768px)
+{
+  .container {
+    max-width: 768px;
+  }
+  .aç-menü {
+    display: none;
+  }
+  
+  .logo-icon {
+    justify-content: space-around;
+    gap:120px;
+  }
+    nav {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      justify-content: space-around;
+      padding-bottom: 24px;
+      padding-top: 24px;}
+
+      .page-nav{
+      display: flex;
+        gap: 40px;
+    }
+    .link-nav {
+      font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        /* identical to box height, or 150% */
+        letter-spacing: 0.02em;
+    }
+    address {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    address>a {
+      font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        /* identical to box height, or 117% */
+        letter-spacing: 0.04em;
+      
+        /* SLATE */
+        color: #434455;
+    }
+    .page-nav:hover,
+    address:hover {
+      color:#404bbf;
+    }
+    .section1 {
+      gap: 36px;
+        padding: 112px 0;
+        background-image:
+          linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+          ),
+          url(../images/people-office\ 1@2x.jpg);
+    }
+    .page-title {
+      max-width: 496px;
+      font-size: 56px;
+        line-height: 1.07143;
+        /* or 107% */
+        text-align: center;
+        letter-spacing: 0.02em;
+    }
+    .box,
+    .page-list-portfolio {
+      flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+    
+    .box-li,
+    .bölüm3 {
+      flex-basis: calc((100% - 24px) / 2);
+        max-width: 356px;
+    } 
+.page-title3 {
+  text-align: center;
+}
+.page-list {
+  flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+}
+.Bölüm2 {
+  flex-basis: calc((100%-24px) / 2);
+    max-width: 264px;
+}
+.footer {
+  max-width: 768px;
+    padding: 96px 0 96px 108px;
+    flex-direction: row;
+  
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+}
+.form1 {
+flex-direction: row;
+}
+.div {
+  max-width: 264px;
+}
+.başlık {
+  text-align: start;
+}
+.label> input {
+  max-width: 264px;
+}
+.modal {
+  width: 408px;
+}
+.input-1,
+.input-textarea {
+width: 360px;
+}
+}
