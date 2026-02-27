@@ -16,7 +16,6 @@ ul {
 
 .container {
   width: 320 px;
-  height: 7216px;
   margin: 0 auto;
 }
 
@@ -266,12 +265,10 @@ display: flex;
 /*ödev3*/
 .section {
   width: 320px;
-    height: 704px;
 
 }
 .section3 {
   width: 320px;
-  height: 2848px;
   padding-bottom: 88px;
   padding-top: 108px;
   margin: 88px 16px;
@@ -468,7 +465,6 @@ align-items: flex-start;
   background-color: #f4f4fd;
   border-radius: mixed;
   width: 320px;
-  height: 2232px;
   padding-bottom: 84px;
   padding-top: 84px;
   margin-bottom: 96px;
@@ -478,7 +474,6 @@ align-items: flex-start;
 }
 
 .footer {
-  height: 664px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -487,6 +482,7 @@ align-items: flex-start;
     background-color: #2e2f42;
     justify-content: center;
     align-items: center;
+    padding: 96px 0;
 }
 .logoson {
   width: 116px;
