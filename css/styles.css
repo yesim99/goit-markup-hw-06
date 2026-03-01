@@ -609,7 +609,7 @@ align-items: flex-start;
   background: rgba(46, 47, 66, 0.4);
 }
 .is-open {
-  display: none;
+  display: flex;
 }
 .modal form:focus-within {
   opacity: 1;
@@ -785,7 +785,7 @@ align-items: flex-start;
 
 
 /*TABLET GÖRÜNÜMÜ*/
-@media (min-width:320px) and (max-width:768px)
+@media (min-width:768px) and (max-width:1157px)
 {
   .container {
     max-width: 768px;
@@ -843,7 +843,7 @@ align-items: flex-start;
           linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
           ),
-          url(../images/people-office\ 1@2x.jpg);
+          url(../images/people-office\ 1.jpg);
     }
     .page-title {
       max-width: 496px;
@@ -907,4 +907,101 @@ flex-direction: row;
 .input-textarea {
 width: 360px;
 }
+}
+/*desktop görünüm*/
+@media (min-width:1158px){
+.container {
+  max-width: 1440px;
+}
+.logo-icon {
+  padding: 24px 156px;
+  align-items: center;
+  justify-content: space-around;
+}
+.page-nav {
+  gap: 40px;
+    display: flex;
+    list-style-type: none;
+}
+.link-nav:hover::after {
+  content: "";
+    color: #444bbf;
+    text-decoration: underline;
+}
+address {
+  flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+.address1,
+.address2 {
+  font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.section1 {
+  gap: 48px;
+    padding: 188px 0;
+    background-image: linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+      ),
+      url(../images/people-office\ 1.jpg);
+    }
+    .box-li {
+      display: flex;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        background-color: #f4f4fd;
+        width: 264px;
+        height: 112px;
+        padding: 24px 100px;
+        max-width: 264px;
+          flex-basis: calc((100% - 72px) / 4);
+    }
+    .box {
+      gap: 24px;
+    }
+    .page-section1 {
+      display: flex;
+      gap: 24px;
+      justify-content: space-between;
+    }
+    .bölüm1 {
+      gap: 8px;
+      max-width: 264px;
+        flex-basis: calc((100% - 72px) / 4);
+    }
+    .page-list {
+      gap: 24px;
+    }
+    .Bölüm2 {
+      max-width: 264px;
+        flex-basis: calc((100% - 72px) / 4);
+    }
+    .section {
+      gap: 8px;
+    }
+    .page-list-portfolio {
+      row-gap: 48px;
+    }
+    .bölüm3 {
+      flex-basis: calc((100% - 48px) / 3);
+        max-width: 360px;
+    }
+    .footer {
+      min-width: 1158px;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding: 100px 159px 100px 156px;
+    }
+
+.modal {
+  width: 408px;
+}
+
+.input-1,
+.input-textarea {
+  width: 360px;
+}
+
 }
