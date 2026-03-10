@@ -609,7 +609,8 @@ align-items: flex-start;
   background: rgba(46, 47, 66, 0.4);
 }
 .is-open {
-  display: flex;
+  opacity: 1;
+    visibility: visible;
 }
 .modal form:focus-within {
   opacity: 1;
@@ -785,13 +786,14 @@ align-items: flex-start;
 
 
 /*TABLET GÖRÜNÜMÜ*/
-@media (min-width:768px) and (max-width:1157px)
+@media (min-width:768px)
 {
   .container {
     max-width: 768px;
   }
   .aç-menü {
     display: none;
+
   }
   
   .logo-icon {
@@ -909,7 +911,7 @@ width: 360px;
 }
 }
 /*desktop görünüm*/
-@media (min-width:1158px){
+@media (min-width:1140px){
 .container {
   max-width: 1440px;
 }
