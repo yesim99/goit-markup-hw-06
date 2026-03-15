@@ -802,9 +802,7 @@ align-items: flex-start;
 @media (min-width:768px)
 {
   .container {
-    width: 100%;
     max-width: 768px;
-    margin: auto;
   }
   .aç-menü {
     display: none;
@@ -827,21 +825,20 @@ header {
       height: 72px;
 }
   
-  .section,.section2,.section3 {
+  .section,
+  .section2 {
       padding: 96px 0px;
         margin: 0;
   }
-  .logo-icon {
-    justify-content: space-around;
-    gap:120px;
-  }
+
     nav {
       display: flex;
       flex-direction: row;
       list-style-type: none;
       justify-content: space-around;
       padding-bottom: 24px;
-      padding-top: 24px;}
+      padding-top: 24px;
+    }
 
       .page-nav{
       display: flex;
@@ -896,8 +893,10 @@ header {
     .bölüm1 {
       flex-basis: calc((100% - 24px) / 2);
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        gap: 8px;
     }
     .page-title {
     font-weight: 700;
@@ -921,8 +920,9 @@ header {
     }
     .bölüm3 {
       flex-basis: calc((100% - 24px) / 2);
-        max-width: 356px;
+        width: 356px;
         display: flex;
+        flex-direction: row;
         justify-content: center;
           align-items: flex-start;
     } 
@@ -935,10 +935,17 @@ header {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 64px;
+    padding: 96px 108px;
+    justify-content: center;
+    align-items: center;
+
 }
 .Bölüm2 {
+  flex-basis: calc((100% - 24px) / 2);
+  display: flex;
     height: 428px;
       width: 264px;
+
 }
 .box1 > img {
   object-fit: cover;
@@ -1027,9 +1034,7 @@ flex-direction: row;
 /*desktop görünüm*/
 @media (min-width:1158px){
 .container {
-  width: 100%;
   max-width: 1440px;
-  margin: auto;
 }
 header {
   display: flex;
@@ -1053,7 +1058,7 @@ header {
       ),
       url(../images/people-office\ 1.jpg);
     }
-            .section,
+      
             .section2,
             .section3 ,
             .advangate{
@@ -1094,6 +1099,9 @@ address {
     display: flex;
       justify-content: center;
       align-items: center;
+      padding-left: 156px;
+      padding-right: 156px;
+      padding-bottom: 8px;
 }
 .page-title3 {
     font-weight: 500;
@@ -1135,7 +1143,6 @@ address {
       display: flex;
       gap: 24px;
         flex-direction: row;
-        gap: 24px;
         flex-wrap: nowrap;
     }
     .bölüm1 {
@@ -1155,9 +1162,6 @@ address {
     .Bölüm2 {
     width: 264px;
         flex-basis: calc((100% - 72px) / 4);
-    }
-    .section {
-      gap: 8px;
     }
     .page-list-portfolio {
       row-gap: 48px;
