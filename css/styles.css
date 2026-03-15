@@ -163,7 +163,7 @@ width: 288px;
       padding-bottom: 40px;
       transition: opacity 250ms ease;
 }
-.aç-menü.is-open {
+.is-open {
   display: flex;
   opacity: 1;
     visibility: visible;
@@ -618,7 +618,7 @@ align-items: flex-start;
     border-radius: 4px;
     background: rgba(46, 47, 66, 0.4)
 }
-.modal.is-open {
+.is-open {
   display: flex;
   opacity: 1;
     visibility: visible;
