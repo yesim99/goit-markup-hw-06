@@ -60,6 +60,7 @@ img {
   color: #2e2f42;
 
 }
+
 .hamburger-icon {
 width: 24px;
  height: 24px;
@@ -103,7 +104,13 @@ padding: 2px 1px;
   color: #444bbf;
   text-decoration: underline;
 }
-address {
+.tablet-address {
+display: none;
+}
+.tablet-nav {
+  display: none;
+}
+.mobile-address {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -418,7 +425,6 @@ align-items: flex-start;
 }
 
 .icon1 {
-  display: none;
   width: 264px;
   height: 112px;
   border-radius: 4px;
@@ -807,14 +813,12 @@ align-items: flex-start;
   .sosyal-menü-icon {
     display: none;
   }
-  /*.logo-icon {
-    display: flex;
-    flex-direction: row;
-    gap: 120px;
-  }*/
   .logo {
-    margin: 0;
+    display: flex;
+      gap: 0px;
   }
+  
+
   .aç-menü {
     display: none;
 
@@ -841,43 +845,57 @@ header {
       padding: 96px 0px;
         margin: 0;
   }
+.tablet-nav {
+  display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
 
-
-      .page-nav{
-        visibility: visible;
+      .page-nav-tablet{
       display: flex;
       flex-direction: row;
       gap: 40px;
       list-style-type: none;
       justify-content: space-around;
     }
-    .link-nav {
+    .link-nav-tablet {
       font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         /* identical to box height, or 150% */
         letter-spacing: 0.02em;
     }
-    address {
-      visibility: visible;
+
+    .tablet-address {
+      
       display: flex;
       flex-direction: column;
       gap: 12px;
       font-weight: normal;
     }
-    address>a {
-      font-weight: 400;
+    .tablet-address>a {
+      font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
         font-size: 12px;
-        line-height: 1.16;
+        line-height: 14px;
         /* identical to box height, or 117% */
         letter-spacing: 0.04em;
       
         /* SLATE */
         color: #434455;
     }
-    .page-nav:hover,
-    address:hover {
+        .address1,
+        .address2 {
+          width: 118px;
+          height: 14px;
+        }
+    .page-nav-tablet:hover,
+    .page-nav-tablet:focus,
+    .tablet-address:hover
+    .tablet-address:focus {
       color:#404bbf;
+      
     }
     .section1 {
       align-items: center;
@@ -1043,22 +1061,23 @@ flex-direction: row;
 .logo-icon > span {
     display: flex;
       flex-direction: row;
-      gap: 120px;
-}
+    }
 }
 /*desktop görünüm*/
 @media (min-width:1158px){
 .container {
   max-width: 1440px;
 }
-
+ .sosyal-menü-icon {
+   display: none;
+ }
 header {
   display: flex;
     align-items: center;
     padding-left: 156px;
     padding-right: 156px;
-    min-width: 1158px;
-      display: flex;
+    padding-bottom: 24px;
+    padding-top: 24px;
         border-bottom: 1px solid #e7e9fc;
         justify-content: space-around;
 }
@@ -1090,6 +1109,7 @@ header {
     padding-top: 8px;
 }
 .icon1 {
+  position: absolute;
   width: 264px;
     height: 112px;
     border-radius: 4px;
@@ -1097,26 +1117,35 @@ header {
     background-color: #f4f4fd;
     padding: 24px 100px 24px 100px;
 }
+.icon1::before{
+  content: "";
+}
 .hamburger-icon {
   display: none;
 }
 .logo-icon {
-  padding: 24px 156px;
+
   align-items: center;
   justify-content: space-around;
 }
-.page-nav {
+.page-nav-tablet {
   gap: 40px;
     display: flex;
     flex-direction: row;
     list-style-type: none;
 }
-.link-nav:hover::after {
+.link-nav-tablet:hover::after {
   content: "";
     color: #444bbf;
     text-decoration: underline;
 }
-address {
+ .page-nav-tablet:hover,
+ .page-nav-tablet:focus,
+ .tablet-address:hover .tablet-address:focus {
+   color: #404bbf;
+
+ }
+.tablet-address {
   display: flex;
   flex-direction: row;
     gap: 40px;
@@ -1153,6 +1182,7 @@ address {
         text-align: center;
     }
     .box-li {
+      position: relative;
       display: flex;
       flex-direction: column;
         border: 1px solid #8e8f99;
