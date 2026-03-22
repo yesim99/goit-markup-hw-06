@@ -169,12 +169,12 @@ width: 288px;
       padding-bottom: 40px;
       transition: opacity 250ms ease;
 }
-/*.is-open {
+.is-open {
   display: flex;
   opacity: 1;
     visibility: visible;
     pointer-events: auto;
-  }*/
+  }
 
 .page-title {
   font-weight: bold;
@@ -412,7 +412,6 @@ align-items: flex-start;
 /*ödev4*/
 .box {
   display: none;
-  display: flex;
   position: relative;
   padding-left: 156px;
   padding-right: 156px;
@@ -623,14 +622,8 @@ align-items: flex-start;
     height: 623px;
     border-radius: 4px;
     background: rgba(46, 47, 66, 0.4)
-}/*
-.is-open {
-  display: flex;
-  opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+}
 
-}*/
 .modal form:focus-within {
   opacity: 1;
   visibility: visible;
